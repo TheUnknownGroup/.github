@@ -6,6 +6,7 @@ There are currently four repositories that are able to worked on, or just to add
   - [Unknown Mod](https://github.com/TheUnknownGroup/unknown-mod)!
   - [Custom Splashes](https://github.com/TheUnknownGroup/custom-splashes)!
   - [Our website](https://github.com/TheUnknownGroup/theunknowngroup.github.io)!
-  - [and finally, Java](https://github.com/TheUnknownGroup/Java)!
+  - [Java](https://github.com/TheUnknownGroup/Java)!
+  - [and finally, VSCode-Snippets](https://github.com/TheUnknownGroup/VSCode-Snippets)!
 
 You can click on any of the links above and they will take you to each repository, allowing you to check them out!
