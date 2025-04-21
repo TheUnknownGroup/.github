@@ -54,8 +54,8 @@ for repo in repos:
   name = repo["name"]
   languages = repo["languages"]["nodes"]
   commits = repo["defaultBranchRef"]["target"]["history"]["totalCount"] if repo["defaultBranchRef"] else 0
-  prs = sum(repo["pullRequests"]["totalCount"])
-  issues = sum(repo["issues"]["totalCount"])
+  prs = repo["pullRequests"]["totalCount"]
+  issues = repo["issues"]["totalCount"]
   stars = sum(repo["stargazerCount"])
   forks = sum(repo["forkCount"])
 
