@@ -11,13 +11,4 @@ There are currently four repositories that are able to worked on, or just to add
   - [Our minecraft duplicate - Elementa](https://github.com/TheUnknownGroup/Elementa)!
   - [and finally, VSCode-Snippets](https://github.com/TheUnknownGroup/VSCode-Snippets)!
 
-You can click on any of the links above and they will take you to each repository, allowing you to check them out!💪 Heres our stats!💪 Heres our stats!💪 Heres our stats!💪 Heres our stats!
-
-[![Name: 7v13wbluqt](<Response [200]>)](https://github.com/TheUnknownGroup/)
- Languages: None
- Commits: 1
- Pull Requests: 0
- Issues: 0
- Total Stars: 0
- Total Forks: 0
- 
+You can click on any of the links above and they will take you to each repository, allowing you to check them out!

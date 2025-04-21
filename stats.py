@@ -52,26 +52,29 @@ repos = data["data"]["organization"]["repositories"]["nodes"]
 
 lang_count = Counter()
 
-print(f"💪 Heres our stats!\n")
 for repo in repos:
-  name = [repo["name"]]
-  langs = [lang["name"] for lang in repo["languages"]["nodes"]]
-  commits = repo["defaultBranchRef"]["target"]["history"]["totalCount"] if repo["defaultBranchRef"] else 0
-  prs = repo["pullRequests"]["totalCount"]
-  iss = repo["issues"]["totalCount"]
-  stars = repo["stargazerCount"]
-  forks = repo["forkCount"]
+  print([repo["name"]])
 
-  lang_count.update(langs)
+# print(f"\n💪 Heres our stats!\n")
+# for repo in repos:
+#   name = [repo["name"]]
+#   langs = [lang["name"] for lang in repo["languages"]["nodes"]]
+#   commits = repo["defaultBranchRef"]["target"]["history"]["totalCount"] if repo["defaultBranchRef"] else 0
+#   prs = repo["pullRequests"]["totalCount"]
+#   iss = repo["issues"]["totalCount"]
+#   stars = repo["stargazerCount"]
+#   forks = repo["forkCount"]
 
-commits_img = requests.get(
-  f"https://img.shields.io/github/commit-activity/t/{ORG_NAME}/{name}"
-)
+#   lang_count.update(langs)
 
-print(f"[![Name: {', '.join(name)}]({commits_img})](https://github.com/{ORG_NAME}/)\n "+
-      f"Languages: {', '.join(langs) if langs else 'None' }\n "+
-      f"Commits: {commits}\n "+
-      f"Pull Requests: {prs}\n "+
-      f"Issues: {iss}\n "+
-      f"Total Stars: {stars}\n "+
-      f"Total Forks: {forks}\n ")
+# commits_img = requests.get(
+#   f"https://img.shields.io/github/commit-activity/t/{ORG_NAME}/{name}"
+# )
+
+# print(f"\n[![Name: {', '.join(name)}]({commits_img})](https://github.com/{ORG_NAME}/)\n "+
+#       f"\nLanguages: {', '.join(langs) if langs else 'None' }\n "+
+#       f"\nCommits: {commits}\n "+
+#       f"\nPull Requests: {prs}\n "+
+#       f"\nIssues: {iss}\n "+
+#       f"\nTotal Stars: {stars}\n "+
+#       f"\nTotal Forks: {forks}\n ")
