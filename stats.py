@@ -56,8 +56,8 @@ for repo in repos:
   commits = repo["defaultBranchRef"]["target"]["history"]["totalCount"] if repo["defaultBranchRef"] else 0
   prs = repo["pullRequests"]["totalCount"]
   issues = repo["issues"]["totalCount"]
-  stars = sum(repo["stargazerCount"])
-  forks = sum(repo["forkCount"])
+  stars = repo["stargazerCount"]
+  forks = repo["forkCount"]
 
 commits_img = requests.get(
   f"https://img.shields.io/github/commit-activity/t/{ORG_NAME}/{name}"
