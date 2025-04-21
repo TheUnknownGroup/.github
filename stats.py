@@ -46,9 +46,10 @@ response = requests.post(
   headers=HEADERS
 )
 
+i = 0
+
 data = response.json()
 repos = data["data"]["organization"]["repositories"]["nodes"]
-i = 0
 
 print(f"\n\n💪 Heres out stats!\n\n")
 for repo in repos:
@@ -59,8 +60,6 @@ for repo in repos:
   commits_img = f"https://img.shields.io/github/commit-activity/t/{ORG_NAME}/{name}"
   forks_img = f"https://img.shields.io/github/forks/{ORG_NAME}/{name}"
   stars_img = f"https://img.shields.io/github/stars/{ORG_NAME}/{name}"
-  stats[i] += ["\nRepo"]
-  i += 1
   print(f"\nRepo: {name}" +
         f"\nCommits: [![{name}]({commits_img})]({MAIN}/)\n"+
         f"\nLanguages: {', '.join(langs) if langs else 'None'}\n"+
@@ -68,3 +67,19 @@ for repo in repos:
         f"\nIssues: {iss}\n"+
         f"\nStars: [![{name}]({stars_img})]({MAIN}/{name})\n"
         f"\nForks: [![{name}]({forks_img})]({MAIN}/{name})\n")
+
+  if stats[i] == stats[0]:
+    stats[i] += ["\nRepo"]
+  elif stats[i] == stats[1]:
+    stats[i] += ["\nCommits"]
+  elif stats[i] == stats[2]:
+    stats[i] += ["\nCommits"]
+  elif stats[i] == stats[3]:
+    stats[i] += ["\nCommits"]
+  elif stats[i] == stats[4]:
+    stats[i] += ["\nCommits"]
+  elif stats[i] == stats[5]:
+    stats[i] += ["\nCommits"]
+  elif stats[i] == stats[6]:
+    stats[i] += ["\nCommits"]
+  i += 1
