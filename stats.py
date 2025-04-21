@@ -5,6 +5,7 @@ from collections import Counter
 GITHUB_TOKEN = os.environ["GITHUB_TOKEN"]
 ORG_NAME = "TheUnknownGroup"
 HEADERS = { "Authorization": f"Bearer {GITHUB_TOKEN}" }
+MAIN = "https://github.com/TheUnknownGroup/"
 
 query = f"""
 {{
@@ -56,7 +57,7 @@ print(f"\n💪 Heres out stats!\n")
 for repo in repos:
   name = repo["name"]
   commits_img = f"https://img.shields.io/github/commit-activity/t/{ORG_NAME}/{name}"
-  print(f"[![Name: {name}]({commits_img})]()")
+  print(f"[![Name: {name}]({commits_img})]({MAIN})")
 
 # print(f"\n💪 Heres our stats!\n")
 # for repo in repos:
