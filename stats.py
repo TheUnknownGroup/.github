@@ -52,7 +52,7 @@ repos = data["data"]["organization"]["repositories"]["nodes"]
 print(f"💪 Heres our stats!\n")
 for repo in repos:
   name = repo["name"]
-  languages = str(repo["languages"]["nodes"]["name"])
+  languages = repo["languages"]["nodes"]
   commits = sum(repo["defaultBranchRef"]["target"]["history"]["totalCount"]) if repo["defaultBranchRef"] else 0
   prs = sum(repo["pullRequests"]["totalCount"])
   issues = sum(repo["issues"]["totalCount"])
