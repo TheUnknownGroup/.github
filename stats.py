@@ -53,7 +53,8 @@ repos = data["data"]["organization"]["repositories"]["nodes"]
 lang_count = Counter()
 
 for repo in repos:
-  print([repo["name"]])
+  name = repo["name"]
+  print(f"[![Name: {name}]")
 
 # print(f"\n💪 Heres our stats!\n")
 # for repo in repos:
