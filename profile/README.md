@@ -13,7 +13,9 @@ There are currently four repositories that are able to worked on, or just to add
 
 You can click on any of the links above and they will take you to each repository, allowing you to check them out!
 
-💪 Heres out stats!
+💪Heres our stats!
+
+
 
 | Repository | Stars | Forks | Languages | Pull Requests | Issues | Commits |
 |------------|-------|-------|-----------|---------------|--------|---------|
@@ -28,3 +30,4 @@ You can click on any of the links above and they will take you to each repositor
 | push | [![push](https://img.shields.io/github/commit-activity/t/TheUnknownGroup/push)](https://github.com/TheUnknownGroup/) | None | 0 | 0 | [![push](https://img.shields.io/github/stars/TheUnknownGroup/push)](https://github.com/TheUnknownGroup/push) | [![push](https://img.shields.io/github/forks/TheUnknownGroup/push)](https://github.com/TheUnknownGroup/push)
 | UKMCLAvalonia | [![UKMCLAvalonia](https://img.shields.io/github/commit-activity/t/TheUnknownGroup/UKMCLAvalonia)](https://github.com/TheUnknownGroup/) | C#, Inno Setup | 0 | 0 | [![UKMCLAvalonia](https://img.shields.io/github/stars/TheUnknownGroup/UKMCLAvalonia)](https://github.com/TheUnknownGroup/UKMCLAvalonia) | [![UKMCLAvalonia](https://img.shields.io/github/forks/TheUnknownGroup/UKMCLAvalonia)](https://github.com/TheUnknownGroup/UKMCLAvalonia)
 | 7v13wbluqt | [![7v13wbluqt](https://img.shields.io/github/commit-activity/t/TheUnknownGroup/7v13wbluqt)](https://github.com/TheUnknownGroup/) | None | 0 | 0 | [![7v13wbluqt](https://img.shields.io/github/stars/TheUnknownGroup/7v13wbluqt)](https://github.com/TheUnknownGroup/7v13wbluqt) | [![7v13wbluqt](https://img.shields.io/github/forks/TheUnknownGroup/7v13wbluqt)](https://github.com/TheUnknownGroup/7v13wbluqt)
+
