@@ -75,9 +75,9 @@ for repo in repos:
   langs = [lang["name"] for lang in repo["languages"]["nodes"]]
   prs = repo["pullRequests"]["totalCount"]
   iss = repo["issues"]["totalCount"]
-  commits_img = f"https://img.shields.io/github/commit-activity/t/{ORG_NAME}/{name}?style=plastic&color=green"
-  forks_img = f"https://img.shields.io/github/forks/{ORG_NAME}/{name}?style=plastic&color=green"
-  stars_img = f"https://img.shields.io/github/stars/{ORG_NAME}/{name}?style=plastic&color=green"
+  commits_img = f"https://img.shields.io/github/commit-activity/t/{ORG_NAME}/{name}?style=for-the-badge&color=green"
+  forks_img = f"https://img.shields.io/github/forks/{ORG_NAME}/{name}?style=for-the-badge&color=green"
+  stars_img = f"https://img.shields.io/github/stars/{ORG_NAME}/{name}?style=for-the-badge&color=green"
   markdown += f"| {name} | [![{name}]({commits_img})]({MAIN}/) | {', '.join(langs) if langs else 'None'} | {prs} | {iss} | [![{name}]({stars_img})]({MAIN}/{name}) | [![{name}]({forks_img})]({MAIN}/{name})\n"
 
 print(markdown)
