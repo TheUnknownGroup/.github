@@ -81,4 +81,4 @@ for repo in repos:
   stars_img = f"https://img.shields.io/github/stars/{ORG_NAME}/{name}"
   markdown += f"| {name} | [![{name}]({commits_img})]({MAIN}/) | {', '.join(langs) if langs else 'None'} | {prs} | {iss} | [![{name}]({stars_img})]({MAIN}/{name}) | [![{name}]({forks_img})]({MAIN}/{name})"
 
-  print(markdown)
+print(markdown)
