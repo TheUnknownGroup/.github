@@ -62,18 +62,16 @@ for repo in repos:
   stars = repo["stargazerCount"]
   forks = repo["forkCount"]
 
-i = 0
-for names in name[i]:
-  commits_img = requests.get(
-    f"https://img.shields.io/github/commit-activity/t/{ORG_NAME}/{names}"
-  )
+  lang_count.update(langs)
 
-for names in name[i]:
-  print(f"[![Name: {', '.join(names)}]({commits_img})](https://github.com/{ORG_NAME}/)\n "+
-        f"Languages: {', '.join(langs) if langs else 'None' }\n "+
-        f"Commits: {commits}\n "+
-        f"Pull Requests: {prs}\n "+
-        f"Issues: {iss}\n "+
-        f"Total Stars: {stars}\n "+
-        f"Total Forks: {forks}\n ")
-  i + 1
+commits_img = requests.get(
+  f"https://img.shields.io/github/commit-activity/t/{ORG_NAME}/{name}"
+)
+
+print(f"[![Name: {', '.join(name)}]({commits_img})](https://github.com/{ORG_NAME}/)\n "+
+      f"Languages: {', '.join(langs) if langs else 'None' }\n "+
+      f"Commits: {commits}\n "+
+      f"Pull Requests: {prs}\n "+
+      f"Issues: {iss}\n "+
+      f"Total Stars: {stars}\n "+
+      f"Total Forks: {forks}\n ")
