@@ -6,6 +6,24 @@ ORG_NAME = "TheUnknownGroup"
 HEADERS = { "Authorization": f"Bearer {GITHUB_TOKEN}" }
 MAIN = "https://github.com/TheUnknownGroup"
 
+a = """## Welcome! :wave:
+This is the README markdown file for the organization `The Unknown Group`!
+
+There are currently four repositories that are able to worked on, or just to add your own code. The repositories are the following:
+
+  - [Unknown Mod](https://github.com/TheUnknownGroup/unknown-mod)!
+  - [Custom Splashes](https://github.com/TheUnknownGroup/custom-splashes)!
+  - [Our website](https://github.com/TheUnknownGroup/theunknowngroup.github.io)!
+  - [Java](https://github.com/TheUnknownGroup/Java)!
+  - [Our minecraft launcher - UKMCL](https://github.com/TheUnknownGroup/UKMCL)!
+  - [Our minecraft duplicate - Elementa](https://github.com/TheUnknownGroup/Elementa)!
+  - [and finally, VSCode-Snippets](https://github.com/TheUnknownGroup/VSCode-Snippets)!
+
+You can click on any of the links above and they will take you to each repository, allowing you to check them out!
+
+💪Heres our stats!\n
+"""
+
 query = f"""
 {{
   organization(login: "{ORG_NAME}") {{
@@ -44,11 +62,15 @@ response = requests.post(
   json={"query": query},
   headers=HEADERS
 )
+markdown = """
+|------------|-------|-------|-----------|---------------|--------|---------|
+| Repository | Stars | Forks | Languages | Pull Requests | Issues | Commits |
+|------------|-------|-------|-----------|---------------|--------|---------|\n"""
 
 data = response.json()
 repos = data["data"]["organization"]["repositories"]["nodes"]
 
-print(f"\n\n💪 Heres out stats!\n\n")
+print(a)
 for repo in repos:
   name = repo["name"]
   langs = [lang["name"] for lang in repo["languages"]["nodes"]]
@@ -57,10 +79,6 @@ for repo in repos:
   commits_img = f"https://img.shields.io/github/commit-activity/t/{ORG_NAME}/{name}"
   forks_img = f"https://img.shields.io/github/forks/{ORG_NAME}/{name}"
   stars_img = f"https://img.shields.io/github/stars/{ORG_NAME}/{name}"
-  print(f"\nRepo: {name}" +
-        f"\nCommits: [![{name}]({commits_img})]({MAIN}/)\n"+
-        f"\nLanguages: {', '.join(langs) if langs else 'None'}\n"+
-        f"\nPull Requests: {prs}\n"+
-        f"\nIssues: {iss}\n"+
-        f"\nStars: [![{name}]({stars_img})]({MAIN}/{name})\n"
-        f"\nForks: [![{name}]({forks_img})]({MAIN}/{name})\n")
+  markdown += f"| {name} | [![{name}]({commits_img})]({MAIN}/) | {', '.join(langs) if langs else 'None'} | {prs} | {iss} | [![{name}]({stars_img})]({MAIN}/{name}) | [![{name}]({forks_img})]({MAIN}/{name})"
+
+  print(markdown)
