@@ -1,6 +1,5 @@
 import os
 import requests
-from collections import Counter
 
 GITHUB_TOKEN = os.environ["GITHUB_TOKEN"]
 ORG_NAME = "TheUnknownGroup"
@@ -16,7 +15,7 @@ query = f"""
       name
         stargazerCount
         forkCount
-        languages(first: 10) {{
+        languages(first: 100) {{
           nodes {{
             name
           }}
@@ -51,33 +50,19 @@ response = requests.post(
 data = response.json()
 repos = data["data"]["organization"]["repositories"]["nodes"]
 
-lang_count = Counter()
-
 print(f"\n\n💪 Heres out stats!\n\n")
 for repo in repos:
   name = repo["name"]
   langs = [lang["name"] for lang in repo["languages"]["nodes"]]
+  prs = repo["pullRequests"]["totalCount"]
+  iss = repo["issues"]["totalCount"]
+  stars = repo["stargazerCount"]
+  forks = repo["forkCount"]
   commits_img = f"https://img.shields.io/github/commit-activity/t/{ORG_NAME}/{name}"
-  print(f"\n[![Name: {name}]({commits_img})]({MAIN})")
-  print(f"\nLanguages: {', '.join(langs) if langs else 'None'}")
-
-# print(f"\n💪 Heres our stats!\n")
-# for repo in repos:
-#   name = [repo["name"]]
-#   langs = [lang["name"] for lang in repo["languages"]["nodes"]]
-#   commits = repo["defaultBranchRef"]["target"]["history"]["totalCount"] if repo["defaultBranchRef"] else 0
-#   prs = repo["pullRequests"]["totalCount"]
-#   iss = repo["issues"]["totalCount"]
-#   stars = repo["stargazerCount"]
-#   forks = repo["forkCount"]
-
-#   lang_count.update(langs)
-
-
-# print(f"\n[![Name: {', '.join(name)}]({commits_img})](https://github.com/{ORG_NAME}/)\n "+
-#       f"\nLanguages: {', '.join(langs) if langs else 'None' }\n "+
-#       f"\nCommits: {commits}\n "+
-#       f"\nPull Requests: {prs}\n "+
-#       f"\nIssues: {iss}\n "+
-#       f"\nTotal Stars: {stars}\n "+
-#       f"\nTotal Forks: {forks}\n ")
+  print(f"\nRepo: {name}" +
+        f"[![Name: {name}]({commits_img})]({MAIN})\n"+
+        f"\nLanguages: {', '.join(langs) if langs else 'None'}\n"+
+        f"\nPull Requests: {prs}\n"+
+        f"\nIssues: {iss}\n"+
+        f"\nTotal Stars: {stars}\n"+
+        f"\nTotal Forks: {forks}\n")
