@@ -54,9 +54,7 @@ lang_count = Counter()
 
 print(f"💪 Heres our stats!\n")
 for repo in repos:
-  name = repo["name"]
-  for names in name:
-      names = name
+  name = [repo["name"]]
   langs = [lang["name"] for lang in repo["languages"]["nodes"]]
   commits = repo["defaultBranchRef"]["target"]["history"]["totalCount"] if repo["defaultBranchRef"] else 0
   prs = repo["pullRequests"]["totalCount"]
@@ -64,16 +62,18 @@ for repo in repos:
   stars = repo["stargazerCount"]
   forks = repo["forkCount"]
 
-for repos2 in names:
+i = 0
+for names in name[i]:
   commits_img = requests.get(
     f"https://img.shields.io/github/commit-activity/t/{ORG_NAME}/{names}"
   )
 
-for names in name:
-   print(f"[![Name: {names}]()]()\n\n")
-print(f"Languages: {', '.join(langs) if langs else 'None' }\n\n"+
-      f"Commits: {commits}\n\n"+
-      f"Pull Requests: {prs}\n\n"+
-      f"Issues: {iss}\n\n"+
-      f"Total Stars: {stars}\n\n"+
-      f"Total Forks: {forks}\n\n")
+for names in name[i]:
+  print(f"[![Name: {', '.join(names)}]({commits_img})](https://github.com/{ORG_NAME}/)\n "+
+        f"Languages: {', '.join(langs) if langs else 'None' }\n "+
+        f"Commits: {commits}\n "+
+        f"Pull Requests: {prs}\n "+
+        f"Issues: {iss}\n "+
+        f"Total Stars: {stars}\n "+
+        f"Total Forks: {forks}\n ")
+  i + 1
