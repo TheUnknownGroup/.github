@@ -32,7 +32,6 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           python ${{ github.workspace }}/stats.py > stats.txt
-          echo "## Stats!" > profile/README.md
           cat stats.txt >> profile/README.md
 
       - name: commit

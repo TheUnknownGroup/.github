@@ -7,7 +7,7 @@ HEADERS = { "Authorization": f"Bearer {GITHUB_TOKEN}" }
 
 query = """
 {
-  organization(login: "%s") {
+  organization(login: "{0}") {
     name
     repositories(first: 100) {
       nodes {
@@ -19,11 +19,26 @@ query = """
             name
           }
         }
+        defaultBranchRef {
+          target {
+            ... on Commit {
+              history {
+                totalCount
+              }
+            }
+          }
+        }
+        pullRequests {
+          totalCount
+        }
+        issues {
+          totalCount
+        }
       }
     }
   }
 }
-""" % ORG_NAME
+""".format(ORG_NAME)
 
 response = requests.post(
   "https://api.github.com/graphql",
@@ -34,8 +49,14 @@ response = requests.post(
 data = response.json()
 repos = data["data"]["organization"]["repositories"]["nodes"]
 
-total_stars = sum(repo["stargazerCount"] for repo in repos)
-total_forks = sum(repo["forkCount"] for repo in repos)
+print(f"💪 Heres our stats!\n")
+for repo in repos:
+  name = repo["name"]
+  languages = repo["languages"]["nodes"]["name"]
+  commits
+  stars = sum(repo["stargazerCount"])
+  forks = sum(repo["forkCount"])
 
-print(f"Total Stars: {total_stars}")
-print(f"Total Forks: {total_forks}")
+print(f""+
+      f"Total Stars: {stars}\n"+
+      f"TotalForks: {forks}\n")
