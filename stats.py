@@ -55,9 +55,7 @@ lang_count = Counter()
 print(f"\n💪 Heres out stats!\n")
 for repo in repos:
   name = repo["name"]
-  commits_img = requests.get(
-    f"https://img.shields.io/github/commit-activity/t/{ORG_NAME}/{name}"
-  )
+  commits_img = f"https://img.shields.io/github/commit-activity/t/{ORG_NAME}/{name}"
   print(f"[![Name: {name}]({commits_img})]()")
 
 # print(f"\n💪 Heres our stats!\n")
