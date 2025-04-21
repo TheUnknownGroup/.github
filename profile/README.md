@@ -12,3 +12,151 @@ There are currently four repositories that are able to worked on, or just to add
   - [and finally, VSCode-Snippets](https://github.com/TheUnknownGroup/VSCode-Snippets)!
 
 You can click on any of the links above and they will take you to each repository, allowing you to check them out!
+
+
+💪 Heres out stats!
+
+
+
+Repo: Java[![Name: Java](https://img.shields.io/github/commit-activity/t/TheUnknownGroup/Java)](https://github.com/TheUnknownGroup/)
+
+Languages: HTML, JavaScript, CSS, Java, Python
+
+Pull Requests: 7
+
+Issues: 2
+
+Total Stars: 1
+
+Total Forks: 0
+
+
+Repo: unknown-mod[![Name: unknown-mod](https://img.shields.io/github/commit-activity/t/TheUnknownGroup/unknown-mod)](https://github.com/TheUnknownGroup/)
+
+Languages: Java, mcfunction
+
+Pull Requests: 2
+
+Issues: 0
+
+Total Stars: 1
+
+Total Forks: 0
+
+
+Repo: theunknowngroup.github.io[![Name: theunknowngroup.github.io](https://img.shields.io/github/commit-activity/t/TheUnknownGroup/theunknowngroup.github.io)](https://github.com/TheUnknownGroup/)
+
+Languages: CSS, JavaScript, Astro
+
+Pull Requests: 0
+
+Issues: 0
+
+Total Stars: 1
+
+Total Forks: 0
+
+
+Repo: custom-splashes[![Name: custom-splashes](https://img.shields.io/github/commit-activity/t/TheUnknownGroup/custom-splashes)](https://github.com/TheUnknownGroup/)
+
+Languages: None
+
+Pull Requests: 0
+
+Issues: 0
+
+Total Stars: 1
+
+Total Forks: 0
+
+
+Repo: .github[![Name: .github](https://img.shields.io/github/commit-activity/t/TheUnknownGroup/.github)](https://github.com/TheUnknownGroup/)
+
+Languages: Python
+
+Pull Requests: 0
+
+Issues: 0
+
+Total Stars: 1
+
+Total Forks: 0
+
+
+Repo: VSCode-Snippets[![Name: VSCode-Snippets](https://img.shields.io/github/commit-activity/t/TheUnknownGroup/VSCode-Snippets)](https://github.com/TheUnknownGroup/)
+
+Languages: None
+
+Pull Requests: 0
+
+Issues: 0
+
+Total Stars: 1
+
+Total Forks: 0
+
+
+Repo: UKMCL[![Name: UKMCL](https://img.shields.io/github/commit-activity/t/TheUnknownGroup/UKMCL)](https://github.com/TheUnknownGroup/)
+
+Languages: Kotlin, CSS, Inno Setup, Shell
+
+Pull Requests: 18
+
+Issues: 3
+
+Total Stars: 1
+
+Total Forks: 0
+
+
+Repo: Elementa[![Name: Elementa](https://img.shields.io/github/commit-activity/t/TheUnknownGroup/Elementa)](https://github.com/TheUnknownGroup/)
+
+Languages: Java
+
+Pull Requests: 0
+
+Issues: 0
+
+Total Stars: 1
+
+Total Forks: 0
+
+
+Repo: push[![Name: push](https://img.shields.io/github/commit-activity/t/TheUnknownGroup/push)](https://github.com/TheUnknownGroup/)
+
+Languages: None
+
+Pull Requests: 0
+
+Issues: 0
+
+Total Stars: 0
+
+Total Forks: 0
+
+
+Repo: UKMCLAvalonia[![Name: UKMCLAvalonia](https://img.shields.io/github/commit-activity/t/TheUnknownGroup/UKMCLAvalonia)](https://github.com/TheUnknownGroup/)
+
+Languages: C#, Inno Setup
+
+Pull Requests: 0
+
+Issues: 0
+
+Total Stars: 0
+
+Total Forks: 0
+
+
+Repo: 7v13wbluqt[![Name: 7v13wbluqt](https://img.shields.io/github/commit-activity/t/TheUnknownGroup/7v13wbluqt)](https://github.com/TheUnknownGroup/)
+
+Languages: None
+
+Pull Requests: 0
+
+Issues: 0
+
+Total Stars: 0
+
+Total Forks: 0
+
