@@ -52,9 +52,13 @@ repos = data["data"]["organization"]["repositories"]["nodes"]
 
 lang_count = Counter()
 
+print(f"\n💪 Heres out stats!\n")
 for repo in repos:
   name = repo["name"]
-  print(f"[![Name: {name}]")
+  commits_img = requests.get(
+    f"https://img.shields.io/github/commit-activity/t/{ORG_NAME}/{name}"
+  )
+  print(f"[![Name: {name}]({commits_img})]()")
 
 # print(f"\n💪 Heres our stats!\n")
 # for repo in repos:
@@ -68,9 +72,6 @@ for repo in repos:
 
 #   lang_count.update(langs)
 
-# commits_img = requests.get(
-#   f"https://img.shields.io/github/commit-activity/t/{ORG_NAME}/{name}"
-# )
 
 # print(f"\n[![Name: {', '.join(name)}]({commits_img})](https://github.com/{ORG_NAME}/)\n "+
 #       f"\nLanguages: {', '.join(langs) if langs else 'None' }\n "+
