@@ -15,7 +15,6 @@ You can click on any of the links above and they will take you to each repositor
 
 💪 Heres out stats!
 
-|------------|-------|-------|-----------|---------------|--------|---------|
 | Repository | Stars | Forks | Languages | Pull Requests | Issues | Commits |
 |------------|-------|-------|-----------|---------------|--------|---------|
 | Java | [![Java](https://img.shields.io/github/commit-activity/t/TheUnknownGroup/Java)](https://github.com/TheUnknownGroup/) | HTML, JavaScript, CSS, Java, Python | 7 | 2 | [![Java](https://img.shields.io/github/stars/TheUnknownGroup/Java)](https://github.com/TheUnknownGroup/Java) | [![Java](https://img.shields.io/github/forks/TheUnknownGroup/Java)](https://github.com/TheUnknownGroup/Java)

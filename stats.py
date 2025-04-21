@@ -63,7 +63,6 @@ response = requests.post(
   headers=HEADERS
 )
 markdown = """
-|------------|-------|-------|-----------|---------------|--------|---------|
 | Repository | Stars | Forks | Languages | Pull Requests | Issues | Commits |
 |------------|-------|-------|-----------|---------------|--------|---------|\n"""
 
@@ -79,6 +78,6 @@ for repo in repos:
   commits_img = f"https://img.shields.io/github/commit-activity/t/{ORG_NAME}/{name}"
   forks_img = f"https://img.shields.io/github/forks/{ORG_NAME}/{name}"
   stars_img = f"https://img.shields.io/github/stars/{ORG_NAME}/{name}"
-  markdown += f"| {name} | [![{name}]({commits_img})]({MAIN}/) | {', '.join(langs) if langs else 'None'} | {prs} | {iss} | [![{name}]({stars_img})]({MAIN}/{name}) | [![{name}]({forks_img})]({MAIN}/{name})\n\n"
+  markdown += f"| {name} | [![{name}]({commits_img})]({MAIN}/) | {', '.join(langs) if langs else 'None'} | {prs} | {iss} | [![{name}]({stars_img})]({MAIN}/{name}) | [![{name}]({forks_img})]({MAIN}/{name})\n"
 
 print(markdown)
