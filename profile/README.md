@@ -12,10 +12,3 @@ There are currently four repositories that are able to worked on, or just to add
   - [and finally, VSCode-Snippets](https://github.com/TheUnknownGroup/VSCode-Snippets)!
 
 You can click on any of the links above and they will take you to each repository, allowing you to check them out!💪 Heres our stats!
-
-[![Name: 7v13wbluqt]()
-Languages: []
-Commits: 1
-Pull RequestsTotal Stars: 0
-TotalForks: 0
-

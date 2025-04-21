@@ -52,20 +52,24 @@ repos = data["data"]["organization"]["repositories"]["nodes"]
 print(f"💪 Heres our stats!\n")
 for repo in repos:
   name = repo["name"]
-  languages = repo["languages"]["nodes"]
+  for names in name:
+      names = name
+  languages = repo["languages"]["nodes"]["name"]
   commits = repo["defaultBranchRef"]["target"]["history"]["totalCount"] if repo["defaultBranchRef"] else 0
   prs = repo["pullRequests"]["totalCount"]
   issues = repo["issues"]["totalCount"]
   stars = repo["stargazerCount"]
   forks = repo["forkCount"]
 
-commits_img = requests.get(
-  f"https://img.shields.io/github/commit-activity/t/{ORG_NAME}/{name}"
-)
+for repos2 in names:
+  commits_img = requests.get(
+    f"https://img.shields.io/github/commit-activity/t/{ORG_NAME}/{names}"
+  )
 
-print(f"[![Name: {name}]()\n"+
-      f"Languages: {languages}\n"+
-      f"Commits: {commits}\n"+
-      f"Pull Requests"
-      f"Total Stars: {stars}\n"+
-      f"TotalForks: {forks}\n")
+for names in name:
+   print(f"[![Name: {names}]()]()\n\n")
+print(f"Languages: {languages}\n\n"+
+      f"Commits: {commits}\n\n"+
+      f"Pull Requests: {prs}\n\n"+
+      f"Total Stars: {stars}\n\n"+
+      f"TotalForks: {forks}\n\n")
