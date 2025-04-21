@@ -5,7 +5,6 @@ GITHUB_TOKEN = os.environ["GITHUB_TOKEN"]
 ORG_NAME = "TheUnknownGroup"
 HEADERS = { "Authorization": f"Bearer {GITHUB_TOKEN}" }
 MAIN = "https://github.com/TheUnknownGroup"
-stats = []
 
 query = f"""
 {{
@@ -46,8 +45,6 @@ response = requests.post(
   headers=HEADERS
 )
 
-i = 0
-
 data = response.json()
 repos = data["data"]["organization"]["repositories"]["nodes"]
 
@@ -67,19 +64,3 @@ for repo in repos:
         f"\nIssues: {iss}\n"+
         f"\nStars: [![{name}]({stars_img})]({MAIN}/{name})\n"
         f"\nForks: [![{name}]({forks_img})]({MAIN}/{name})\n")
-
-  if stats[i] == stats[0]:
-    stats[i] += ["\nRepo"]
-  elif stats[i] == stats[1]:
-    stats[i] += ["\nCommits"]
-  elif stats[i] == stats[2]:
-    stats[i] += ["\nCommits"]
-  elif stats[i] == stats[3]:
-    stats[i] += ["\nCommits"]
-  elif stats[i] == stats[4]:
-    stats[i] += ["\nCommits"]
-  elif stats[i] == stats[5]:
-    stats[i] += ["\nCommits"]
-  elif stats[i] == stats[6]:
-    stats[i] += ["\nCommits"]
-  i += 1
