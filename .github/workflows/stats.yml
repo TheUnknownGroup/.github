@@ -3,9 +3,9 @@ name: Update Readme
 on:
   schedule:
     - cron: '0 0 * * 5/2'
-  push:
-    branches:
-      - main
+  # push:
+  #   branches:
+  #     - main
   workflow_dispatch:
 
 jobs:
