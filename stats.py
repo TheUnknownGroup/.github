@@ -7,7 +7,7 @@ HEADERS = { "Authorization": f"Bearer {GITHUB_TOKEN}" }
 
 query = """
 {
-  organization(login: "{0}") {
+  organization(login: "%s") {
     name
     repositories(first: 100) {
       nodes {
@@ -38,7 +38,7 @@ query = """
     }
   }
 }
-""".format(ORG_NAME)
+""" % (ORG_NAME)
 
 response = requests.post(
   "https://api.github.com/graphql",
@@ -53,10 +53,19 @@ print(f"💪 Heres our stats!\n")
 for repo in repos:
   name = repo["name"]
   languages = repo["languages"]["nodes"]["name"]
-  commits
+  commits = sum(repo["defaultBranchRef"]["target"]["history"]["totalCount"]) if repo["defaultBranchRef"] else 0
+  prs = sum(repo["pullRequests"]["totalCount"])
+  issues = sum(repo["issues"]["totalCount"])
   stars = sum(repo["stargazerCount"])
   forks = sum(repo["forkCount"])
 
-print(f""+
+commits_img = requests.get(
+  f"https://img.shields.io/github/commit-activity/t/{ORG_NAME}/{name}"
+)
+
+print(f"[![Name: {name}]()\n"+
+      f"Languages: {languages}\n"+
+      f"Commits: {commits}\n"+
+      f"Pull Requests"
       f"Total Stars: {stars}\n"+
       f"TotalForks: {forks}\n")
