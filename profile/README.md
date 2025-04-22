@@ -17,8 +17,8 @@ You can click on any of the links above and they will take you to each repositor
 
 
 
-| Repository | Stars | Forks | Languages | Pull Requests | Issues | Commits |
-|------------|-------|-------|-----------|---------------|--------|---------|
+| Repository | Commits | Languages | Pull Requests | Issues | Stars | Forks |
+|------------|---------|-----------|---------------|--------|-------|-------|
 | Java | [![Java](https://img.shields.io/github/commit-activity/t/TheUnknownGroup/Java?color=green)](https://github.com/TheUnknownGroup/Java) | HTML, JavaScript, CSS, Java, Python | 7 | 2 | [![Java](https://img.shields.io/github/stars/TheUnknownGroup/Java?color=green)](https://github.com/TheUnknownGroup/Java) | [![Java](https://img.shields.io/github/forks/TheUnknownGroup/Java?color=green)](https://github.com/TheUnknownGroup/Java)
 | unknown-mod | [![unknown-mod](https://img.shields.io/github/commit-activity/t/TheUnknownGroup/unknown-mod?color=green)](https://github.com/TheUnknownGroup/unknown-mod) | Java, mcfunction | 2 | 0 | [![unknown-mod](https://img.shields.io/github/stars/TheUnknownGroup/unknown-mod?color=green)](https://github.com/TheUnknownGroup/unknown-mod) | [![unknown-mod](https://img.shields.io/github/forks/TheUnknownGroup/unknown-mod?color=green)](https://github.com/TheUnknownGroup/unknown-mod)
 | theunknowngroup.github.io | [![theunknowngroup.github.io](https://img.shields.io/github/commit-activity/t/TheUnknownGroup/theunknowngroup.github.io?color=green)](https://github.com/TheUnknownGroup/theunknowngroup.github.io) | CSS, JavaScript, Astro | 0 | 0 | [![theunknowngroup.github.io](https://img.shields.io/github/stars/TheUnknownGroup/theunknowngroup.github.io?color=green)](https://github.com/TheUnknownGroup/theunknowngroup.github.io) | [![theunknowngroup.github.io](https://img.shields.io/github/forks/TheUnknownGroup/theunknowngroup.github.io?color=green)](https://github.com/TheUnknownGroup/theunknowngroup.github.io)
