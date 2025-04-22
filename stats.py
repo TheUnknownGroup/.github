@@ -63,8 +63,8 @@ response = requests.post(
   headers=HEADERS
 )
 markdown = """
-| Repository | Stars | Forks | Languages | Pull Requests | Issues | Commits |
-|------------|-------|-------|-----------|---------------|--------|---------|\n"""
+| Repository | Commits | Languages | Pull Requests | Issues | Stars | Forks |
+|------------|---------|-----------|---------------|--------|-------|-------|\n"""
 
 data = response.json()
 repos = data["data"]["organization"]["repositories"]["nodes"]
