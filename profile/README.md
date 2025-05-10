@@ -2,7 +2,7 @@
 This is the README markdown file for the organization `The Unknown Group`!
 
 There are currently four repositories that are able to worked on, or just to add your own code. The repositories are the following:
-  - [Don't Touch Me! Mod](https://github.com/TheUnknownGroup/donttouch)!
+
   - [Unknown Mod](https://github.com/TheUnknownGroup/unknown-mod)!
   - [Custom Splashes](https://github.com/TheUnknownGroup/custom-splashes)!
   - [Our website](https://github.com/TheUnknownGroup/theunknowngroup.github.io)!
@@ -30,4 +30,6 @@ You can click on any of the links above and they will take you to each repositor
 | push | [![push](https://img.shields.io/github/commit-activity/t/TheUnknownGroup/push?color=green)](https://github.com/TheUnknownGroup/push) | None | 0 | 0 | [![push](https://img.shields.io/github/stars/TheUnknownGroup/push?color=green)](https://github.com/TheUnknownGroup/push) | [![push](https://img.shields.io/github/forks/TheUnknownGroup/push?color=green)](https://github.com/TheUnknownGroup/push)
 | UKMCLAvalonia | [![UKMCLAvalonia](https://img.shields.io/github/commit-activity/t/TheUnknownGroup/UKMCLAvalonia?color=green)](https://github.com/TheUnknownGroup/UKMCLAvalonia) | C#, Inno Setup | 0 | 0 | [![UKMCLAvalonia](https://img.shields.io/github/stars/TheUnknownGroup/UKMCLAvalonia?color=green)](https://github.com/TheUnknownGroup/UKMCLAvalonia) | [![UKMCLAvalonia](https://img.shields.io/github/forks/TheUnknownGroup/UKMCLAvalonia?color=green)](https://github.com/TheUnknownGroup/UKMCLAvalonia)
 | 7v13wbluqt | [![7v13wbluqt](https://img.shields.io/github/commit-activity/t/TheUnknownGroup/7v13wbluqt?color=green)](https://github.com/TheUnknownGroup/7v13wbluqt) | None | 0 | 0 | [![7v13wbluqt](https://img.shields.io/github/stars/TheUnknownGroup/7v13wbluqt?color=green)](https://github.com/TheUnknownGroup/7v13wbluqt) | [![7v13wbluqt](https://img.shields.io/github/forks/TheUnknownGroup/7v13wbluqt?color=green)](https://github.com/TheUnknownGroup/7v13wbluqt)
+| donttouch | [![donttouch](https://img.shields.io/github/commit-activity/t/TheUnknownGroup/donttouch?color=green)](https://github.com/TheUnknownGroup/donttouch) | Java | 0 | 0 | [![donttouch](https://img.shields.io/github/stars/TheUnknownGroup/donttouch?color=green)](https://github.com/TheUnknownGroup/donttouch) | [![donttouch](https://img.shields.io/github/forks/TheUnknownGroup/donttouch?color=green)](https://github.com/TheUnknownGroup/donttouch)
+| Dalib | [![Dalib](https://img.shields.io/github/commit-activity/t/TheUnknownGroup/Dalib?color=green)](https://github.com/TheUnknownGroup/Dalib) | None | 0 | 0 | [![Dalib](https://img.shields.io/github/stars/TheUnknownGroup/Dalib?color=green)](https://github.com/TheUnknownGroup/Dalib) | [![Dalib](https://img.shields.io/github/forks/TheUnknownGroup/Dalib?color=green)](https://github.com/TheUnknownGroup/Dalib)
 
