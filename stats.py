@@ -12,7 +12,6 @@ This is the README markdown file for the organization `The Unknown Group`!
 The repositories are the following:
 
   - [Dalib](https://github.com/TheUnknownGroup/Dalib)!
-  - [maven](https://github.com/TheUnknownMaven/maven)!
   - [mods](https://github.com/TheUnknownGroup/mods)!
   - [Don't Touch Me! Mod](https://github.com/TheUnknownGroup/donttouch)!
   - [Unknown Mod](https://github.com/TheUnknownGroup/unknown-mod)!
