@@ -3,16 +3,14 @@ This is the README markdown file for the organization `The Unknown Group`!
 
 The repositories are the following:
 
-  - [Dalib](https://github.com/TheUnknownGroup/Dalib)!
-  - [mods](https://github.com/TheUnknownGroup/mods)!
-  - [Don't Touch Me! Mod](https://github.com/TheUnknownGroup/donttouch)!
-  - [Unknown Mod](https://github.com/TheUnknownGroup/unknown-mod)!
-  - [Custom Splashes](https://github.com/TheUnknownGroup/custom-splashes)!
-  - [Our website](https://github.com/TheUnknownGroup/theunknowngroup.github.io)!
-  - [Java](https://github.com/TheUnknownGroup/Java)!
   - [Our minecraft launcher - UKMCL](https://github.com/TheUnknownGroup/UKMCL)!
   - [Our minecraft duplicate - Elementa](https://github.com/TheUnknownGroup/Elementa)!
   - [and finally, VSCode-Snippets](https://github.com/TheUnknownGroup/VSCode-Snippets)!
+  - [Don't Touch Me! Mod](https://github.com/TheUnknownGroup/donttouch)!
+  - [Custom Splashes](https://github.com/TheUnknownGroup/custom-splashes)!
+  - [Our website](https://github.com/TheUnknownGroup/theunknowngroup.github.io)!
+  - [mods](https://github.com/TheUnknownGroup/mods)!
+  - [Java](https://github.com/TheUnknownGroup/Java)!
 
 You can click on any of the links above and they will take you to each repository, allowing you to check them out!
 
