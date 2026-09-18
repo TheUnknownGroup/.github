@@ -16,6 +16,10 @@ The repositories are the following:
 
 You can click on any of the links above and they will take you to each repository, allowing you to check them out!
 
+Come join our community discord!
+
+[![Discord](https://img.shields.io/badge/discord_community-gray?style=for-the-badge&logo=discord&logoColor=white&color=%235865F2)](https://discord.gg/jspNzHYTFn)
+
 💪Heres our stats!
 
 
